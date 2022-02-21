@@ -22,17 +22,17 @@ function Home(props){
     }
     return (
         <div>
-            <h1>Hello World!</h1>
+            <h1>Favorite Classes List</h1>
             <form onSubmit={handleSubmit}>
-                <label>Add Favorite Class</label>
+                <label>Add Favorite Class </label>
                 <input type="text" value={value} onChange={handleChange}></input>
                 <button type = "submit">Add Class!</button>
             </form>
-            <div className="my-class">
+            {/* <div className="my-class">
                 {favoriteClasses.map((favClass) =>
                    <Class name = {favClass} key= {favClass}></Class>
                 )}
-            </div>
+            </div> */}
             <div className="my-class">
                 {favoriteClasses.map((favClass) =>
                    <ClassGraphQL name = {favClass} key= {favClass}></ClassGraphQL>
